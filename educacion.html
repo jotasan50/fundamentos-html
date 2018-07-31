@@ -7,38 +7,79 @@
   </head>
   <body>
     <header>
-      <svg>
-        <image xlink:href="images/Logo.svg" width="200px" height="150px"></image>
+      <svg width="180" height="150">
+        <image xlink:href="images/Logo.svg" width="180px" height="150px"></image>
       </svg>
       <h1>Hoja de Vida</h1>
-      <h2>Datos Personales</h2>
-      <h3>Nombre: Julio<br>
-      Apellido: Sandoval<br>
-      Fecha de Nacimiento: 12 de Feb de 1982<br>
-      Lugar de Nacimiento: Villavicencio - Meta</h3>
+      <h2><em>Datos Personales</em></h2>
+      <h3>Nombre:<br>
+      Apellido:<br>
+      Fecha de Nacimiento:<br>
+      Lugar de Nacimiento:</h3>
     </header>
     <nav>
-      <a href="index.html">Inicio</a> |
+      <a href="index.html"> Inicio</a> |
       <a href="educacion.html"> Educacion</a> |
       <a href="experiencia.html"> Experiencia</a>
     </nav>
     <section>
       <article>
-        <h2>Educación</h2>
-        <!--Foto -->
-      </article>
-      <article>
+        <h2><em>Educación</em></h2>
         <p>
-          7. Codifica una Tabla de 4 columnas (Año, Institución, Lugar, ¿Culminó?) por 3 filas<br>
-          (o más si deseas) para indicar los datos sobre tus certificados, cursos, título, entre otros.<br><br>
-          8. Dibuja un Formulario titulado "Agregar Estudios" con los siguientes elementos:<br>
-          a) Una lista desplegable para el Año.<br><br>
-          b) Una caja de entrada de texto para Institución, agrega la validación de campo requerido.<br>
-          c) Una caja de entrada de texto largo para Lugar.<br>
-          d) Un botón "Enviar".
-        </p>
+          <table border="1">
+            <thead>
+              <th>Año</th>
+              <th>Institución</th>
+              <th>Lugar</th>
+              <th>¿Culminó?</th>
+            </thead>
+            <tdoby>
+              <td>2011</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tbody>
+            <tbody>
+              <td>1999</td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tbody>
+          </table>
+        </article>
+        <article>
+          <h2><em>Agregar Estudios</em></h2>
+          <form action="index.html" method="post">
+            <table>
+              <tr>
+                <td><label for="año"><strong>Año: </strong></label></td>
+                <td><select name="año">
+                  <option>2018</option>
+                  <option>2017</option>
+                  <option>2016</option>
+                  <option>2015</option>
+                  <option>2014</option>
+                  <option>2013</option>
+                  <option>2012</option>
+                  <option>2011</option>
+                  <option>2010</option>
+                  <option>1999</option>
+                </select></td>
+              </tr>
+              <tr>
+                <td><label for="institucion"><strong>Institución: </strong></label></td>
+                <td><input type="text" name="institucion" required></td>
+              </tr>
+              <tr>
+                <td><label for="lugar"><strong>Lugar: </strong></label></td>
+                <td><textarea name="lugar" rows="2" cols="21"></textarea></td>
+              </tr>
+            </table>
+            <input type="submit" name="enviar" value="Enviar">
+          </form>
       </article>
     </section>
-    <footer>E-mail: jotasan50@hotmail.com<br>Tel. 310 306 5963</footer>
+    <br><br>
+    <footer><strong><em> E-mail: | Tel.</em></strong></footer>
   </body>
 </html>
